@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="重庆市兼善中学龙凤校区（重庆市一二二中学校）致家长的一封信，家校共育，携手同行">
+    <title>重庆市兼善中学龙凤校区 · 家长亲启 | 家校共育</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #e9e0cf;  /* 古纸底色背景 */
+            font-family: 'Times New Roman', 'Noto Serif SC', '宋体', 'SimSong', 'Georgia', '华文楷书', 'KaiTi', serif;
+            padding: 2rem 1.5rem;
+            line-height: 1.65;
+            color: #2c2a27;
+        }
+
+        /* 主信笺容器 — 温润宣纸效果 */
+        .letter {
+            max-width: 980px;
+            margin: 0 auto;
+            background: #fffcf5;
+            background-image: radial-gradient(circle at 10% 20%, rgba(210, 180, 140, 0.03) 2%, transparent 2.5%),
+                              radial-gradient(circle at 80% 70%, rgba(160, 120, 80, 0.02) 1.8%, transparent 2%);
+            background-size: 28px 28px, 32px 32px;
+            border-radius: 32px;
+            box-shadow: 0 20px 35px -15px rgba(60, 40, 20, 0.25), inset 0 1px 0 rgba(255, 245, 230, 0.8);
+            padding: 2.5rem 2rem 3rem;
+            position: relative;
+            transition: all 0.2s;
+            border: 1px solid #e8dacb;
+        }
+
+        /* 国风印章/墨韵点缀 */
+        .letter::before {
+            content: "✦ 兼善 ✦";
+            position: absolute;
+            bottom: 30px;
+            right: 35px;
+            font-size: 12px;
+            color: #bd9a6b;
+            font-family: 'KaiTi', '华文楷书', serif;
+            opacity: 0.6;
+            letter-spacing: 2px;
+            transform: rotate(-5deg);
+            background: #fef0e0;
+            padding: 4px 10px;
+            border-radius: 40px;
+            border: 0.5px solid #e0c8aa;
+            pointer-events: none;
+        }
+
+        /* 左侧水墨淡纹 */
+        .letter::after {
+            content: "";
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            width: 100px;
+            height: 130px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120"><path fill="none" stroke="%23dac29c" stroke-width="0.7" opacity="0.25" d="M20,30 Q35,10 58,22 T82,45 M15,75 Q32,55 49,68 T72,62 M28,102 Q44,90 60,98 T84,92" stroke-linecap="round"/><path fill="none" stroke="%23c9af83" stroke-width="0.5" opacity="0.3" d="M12,48 L26,53 M70,25 L84,34" /></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        /* 学校头部区域 */
+        .school-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e1cfb0;
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        .school-name {
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #7a5a3a;
+            background: linear-gradient(135deg, #8b6946, #5e3e22);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 1px 1px 2px rgba(120, 70, 30, 0.08);
+        }
+        .sub-name {
+            font-size: 1rem;
+            color: #aa8b60;
+            margin-top: 8px;
+            font-family: inherit;
+            border-top: 1px dashed #eadbc8;
+            display: inline-block;
+            padding-top: 6px;
+        }
+        .date-tag {
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: #b49b72;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* 家长亲启主标题 */
+        .greeting-title {
+            text-align: center;
+            margin: 1.8rem 0 1.5rem 0;
+            position: relative;
+            z-index: 2;
+        }
+        .greeting-title h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            font-family: '华文楷书', 'KaiTi', 'Noto Serif SC', serif;
+            color: #7c5d38;
+            letter-spacing: 8px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.02);
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 12"><path fill="none" stroke="%23dac09d" stroke-width="1" d="M20,6 L180,6" stroke-dasharray="4 4"/></svg>') repeat-x bottom;
+            padding-bottom: 18px;
+            display: inline-block;
+        }
+        .greeting-title .en-sub {
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            color: #bfa27b;
+            text-transform: uppercase;
+            margin-top: 6px;
+        }
+
+        /* 正文内容样式 */
+        .message-content {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 2rem;
+        }
+        .message-content p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            text-indent: 2em;
+            line-height: 1.75;
+        }
+        .message-content .signature-line {
+            text-indent: 0;
+            text-align: right;
+            margin-top: 1.8rem;
+            font-weight: 400;
+            color: #8b694b;
+        }
+        .quote-note {
+            font-style: normal;
+            border-left: 4px solid #dbbc8c;
+            padding-left: 1.2rem;
+            margin: 1.2rem 0;
+            color: #5c4a33;
+            font-size: 0.98rem;
+        }
+
+        /* 温馨提示板块 (国风纹样卡片) */
+        .tips-section {
+            margin: 2.5rem 0 2rem;
+            background: #fffaf2;
+            border-radius: 28px;
+            padding: 1.8rem 2rem;
+            border: 1px solid #eedfcb;
+            box-shadow: 0 8px 18px -10px rgba(80, 55, 30, 0.1);
+            transition: all 0.2s;
+            position: relative;
+            z-index: 2;
+        }
+        .tips-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #926f46;
+            border-bottom: 1.5px solid #e5d4bd;
+            padding-bottom: 8px;
+            margin-bottom: 1.3rem;
+            font-family: '华文楷书', 'KaiTi', serif;
+        }
+        .tips-title span {
+            font-size: 1.8rem;
+        }
+        .tips-list {
+            list-style: none;
+            padding-left: 0.5rem;
+        }
+        .tips-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.8rem;
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.55;
+            color: #3f3324;
+        }
+        .tips-list li::before {
+            content: "❀";
+            position: absolute;
+            left: 0;
+            color: #c4a16b;
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+        .tips-list li strong {
+            color: #8c623f;
+            font-weight: 600;
+            margin-right: 6px;
+        }
+
+        /* 携手同行结语 */
+        .co-education-footer {
+            text-align: center;
+            margin: 2.2rem 0 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        .co-slogan {
+            font-size: 1.6rem;
+            letter-spacing: 4px;
+            font-weight: 500;
+            color: #7c5e3c;
+            background: linear-gradient(120deg, #fef3e6, #faeedb);
+            display: inline-block;
+            padding: 0.6rem 2rem;
+            border-radius: 60px;
+            font-family: '华文楷书', 'KaiTi', serif;
+            border: 1px solid #e2cfb2;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            backdrop-filter: blur(2px);
+        }
+        .school-footer {
+            text-align: center;
+            margin-top: 2.2rem;
+            font-size: 0.85rem;
+            color: #b5956e;
+            border-top: 1px dashed #e3d2bc;
+            padding-top: 1.8rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            letter-spacing: 0.8px;
+        }
+        .school-footer p {
+            margin: 0;
+        }
+
+        /* 响应式设计: 手机与平板 */
+        @media (max-width: 720px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+            .letter {
+                padding: 1.8rem 1.2rem 2.2rem;
+                border-radius: 28px;
+            }
+            .school-name {
+                font-size: 1.35rem;
+            }
+            .sub-name {
+                font-size: 0.85rem;
+            }
+            .greeting-title h1 {
+                font-size: 2.2rem;
+                letter-spacing: 4px;
+            }
+            .message-content p {
+                font-size: 0.98rem;
+                text-indent: 1.8em;
+            }
+            .tips-section {
+                padding: 1.2rem 1.2rem;
+            }
+            .tips-title {
+                font-size: 1.3rem;
+            }
+            .tips-list li {
+                font-size: 0.92rem;
+                padding-left: 1.6rem;
+            }
+            .co-slogan {
+                font-size: 1.2rem;
+                padding: 0.4rem 1rem;
+                letter-spacing: 2px;
+            }
+            .letter::before {
+                font-size: 9px;
+                bottom: 18px;
+                right: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .greeting-title h1 {
+                font-size: 1.8rem;
+            }
+            .school-name {
+                font-size: 1.2rem;
+            }
+            .message-content p {
+                font-size: 0.92rem;
+            }
+            .tips-list li {
+                margin-bottom: 0.85rem;
+            }
+        }
+
+        /* 点缀小印章：家校同心 */
+        .seal-mark {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border: 1px solid #dcbe94;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #bb8f60;
+            font-family: 'KaiTi', serif;
+            transform: rotate(8deg);
+            background: rgba(251, 242, 228, 0.5);
+            backdrop-filter: blur(2px);
+            pointer-events: none;
+            z-index: 3;
+        }
+        .seal-mark span {
+            writing-mode: horizontal-tb;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 680px) {
+            .seal-mark {
+                width: 48px;
+                height: 48px;
+                font-size: 10px;
+                top: 20px;
+                right: 20px;
+            }
+        }
+        
+        /* 情怀细节：手写落款区域 */
+        .warm-signature {
+            font-size: 0.9rem;
+            text-align: right;
+            margin-top: 1rem;
+            font-style: normal;
+            color: #9e7b54;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+<div class="letter">
+    <!-- 国风小印 家校同心 -->
+    <div class="seal-mark">
+        <span>家校·同心</span>
+    </div>
+
+    <!-- 学校全称区域 -->
+    <div class="school-header">
+        <div class="school-name">重庆市兼善中学龙凤校区</div>
+        <div class="sub-name">（重庆市一二二中学校）</div>
+        <div class="date-tag">
+            <span>✦ 丙午年春信 ✦</span>
+            <span>家校共育 温润启程</span>
+        </div>
+    </div>
+
+    <!-- 家长亲启大标题 -->
+    <div class="greeting-title">
+        <h1>家长亲启</h1>
+        <div class="en-sub">A Letter to Parents</div>
+    </div>
+
+    <!-- 主体文案内容（完全保留用户提供的所有原句） -->
+    <div class="message-content">
+        <p>尊敬的各位家长：<br>您好！</p>
+        <p>孩子的成长，离不开学校的悉心培育，更离不开家庭的温情陪伴。家校同心，方能共育未来。</p>
+        <p>感谢您一直以来对学校工作的理解、支持与配合。愿我们携手同行，耐心引导、用心守护，陪伴孩子养成良好习惯、树立远大理想，在青春路上稳步前行、向阳成长。</p>
+        <p>愿每一位孩子都能不负时光、不负期许，以梦为马，奔赴美好前程。</p>
+        <div class="signature-line">
+            —— 重庆市兼善中学龙凤校区 全体教师 敬上
+        </div>
+    </div>
+
+    <!-- 家校共育温馨提示 (符合学校官方温馨提醒板块) -->
+    <div class="tips-section">
+        <div class="tips-title">
+            <span>🍃</span> 家校共育 · 温馨提示
+        </div>
+        <ul class="tips-list">
+            <li><strong>🌼 多一分倾听，近一寸心灵</strong> —— 请每日抽时间与孩子交流校园趣事，耐心倾听他们的喜悦与烦恼，成为孩子最信任的朋友。</li>
+            <li><strong>📚 习惯为根，自律为翼</strong> —— 协助孩子拟定规律作息与自主计划，鼓励阅读与思考，让好习惯成为成长的深厚土壤。</li>
+            <li><strong>❤️ 关注情绪，温润陪伴</strong> —— 青春期成长难免波折，请多肯定孩子的努力，用鼓励代替苛责，守护积极阳光的心态。</li>
+            <li><strong>🏡 榜样无声，家风致远</strong> —— 家长平和坚定的言行是最好的教科书，营造书香、宁静的家庭环境，助力孩子养正修身。</li>
+            <li><strong>🤝 双向奔赴，携手同行</strong> —— 主动与班主任及任课老师保持沟通，及时了解孩子在校动态，让家校信息同频共振。</li>
+        </ul>
+        <div style="font-size:0.85rem; margin-top:1rem; text-align:right; color:#c6aa81; border-top:1px dashed #ecdbba; padding-top:0.8rem;">
+            同心之言 · 其香如兰
+        </div>
+    </div>
+
+    <!-- 原文中最后一句独立展示：家校共育 · 携手同行（再现强调并呼应） -->
+    <div class="co-education-footer">
+        <div class="co-slogan">家校共育 · 携手同行</div>
+    </div>
+
+    <!-- 简洁落款兼善校训 -->
+    <div class="school-footer">
+        <p>🌱 重庆市兼善中学龙凤校区 德育处 & 家校共育中心</p>
+        <p>丙午年春 · 敬呈</p>
+    </div>
+    <div class="warm-signature">
+        愿我们以爱为底色，共绘孩子最美的成长画卷
+    </div>
+</div>
+</body>
+</html>
